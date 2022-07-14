@@ -1,0 +1,435 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0ACC32F8287FE42400A42BBB /* KeyChainExampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACC32F7287FE42400A42BBB /* KeyChainExampleApp.swift */; };
+		0ACC32FA287FE42400A42BBB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACC32F9287FE42400A42BBB /* ContentView.swift */; };
+		0ACC32FC287FE42600A42BBB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ACC32FB287FE42600A42BBB /* Assets.xcassets */; };
+		0ACC32FF287FE42600A42BBB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0ACC32FE287FE42600A42BBB /* Preview Assets.xcassets */; };
+		0ACC3307287FF40500A42BBB /* MixinToken.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACC3306287FF40500A42BBB /* MixinToken.swift */; };
+		0ACC3309287FF83B00A42BBB /* KeychainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACC3308287FF83B00A42BBB /* KeychainStorage.swift */; };
+		0ACC330C287FF87A00A42BBB /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 0ACC330B287FF87A00A42BBB /* SwiftKeychainWrapper */; };
+		0ACC330E287FFB8F00A42BBB /* Authentication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACC330D287FFB8F00A42BBB /* Authentication.swift */; };
+		0ACC3312287FFF1900A42BBB /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACC3311287FFF1900A42BBB /* LoginView.swift */; };
+		0ACC3314287FFF3C00A42BBB /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACC3313287FFF3C00A42BBB /* LoginViewModel.swift */; };
+		0ACC33162880029D00A42BBB /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACC33152880029D00A42BBB /* Credentials.swift */; };
+		0ACC33192880052500A42BBB /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACC33182880052500A42BBB /* APIService.swift */; };
+		0ACC331B288011C400A42BBB /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0ACC331A288011C400A42BBB /* UIApplication+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0ACC32F4287FE42400A42BBB /* KeyChainExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyChainExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0ACC32F7287FE42400A42BBB /* KeyChainExampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainExampleApp.swift; sourceTree = "<group>"; };
+		0ACC32F9287FE42400A42BBB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0ACC32FB287FE42600A42BBB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0ACC32FE287FE42600A42BBB /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0ACC3306287FF40500A42BBB /* MixinToken.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixinToken.swift; sourceTree = "<group>"; };
+		0ACC3308287FF83B00A42BBB /* KeychainStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainStorage.swift; sourceTree = "<group>"; };
+		0ACC330D287FFB8F00A42BBB /* Authentication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentication.swift; sourceTree = "<group>"; };
+		0ACC3311287FFF1900A42BBB /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		0ACC3313287FFF3C00A42BBB /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		0ACC33152880029D00A42BBB /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		0ACC33182880052500A42BBB /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		0ACC331A288011C400A42BBB /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0ACC32F1287FE42300A42BBB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ACC330C287FF87A00A42BBB /* SwiftKeychainWrapper in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0ACC32EB287FE42300A42BBB = {
+			isa = PBXGroup;
+			children = (
+				0ACC32F6287FE42400A42BBB /* KeyChainExample */,
+				0ACC32F5287FE42400A42BBB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0ACC32F5287FE42400A42BBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0ACC32F4287FE42400A42BBB /* KeyChainExample.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0ACC32F6287FE42400A42BBB /* KeyChainExample */ = {
+			isa = PBXGroup;
+			children = (
+				0ACC3317288004E300A42BBB /* Services */,
+				0ACC3310287FFEEC00A42BBB /* ViewModel */,
+				0ACC330F287FFCFB00A42BBB /* Views */,
+				0ACC3305287FF3E800A42BBB /* Models */,
+				0ACC32F7287FE42400A42BBB /* KeyChainExampleApp.swift */,
+				0ACC32FB287FE42600A42BBB /* Assets.xcassets */,
+				0ACC32FD287FE42600A42BBB /* Preview Content */,
+			);
+			path = KeyChainExample;
+			sourceTree = "<group>";
+		};
+		0ACC32FD287FE42600A42BBB /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0ACC32FE287FE42600A42BBB /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0ACC3305287FF3E800A42BBB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				0ACC3306287FF40500A42BBB /* MixinToken.swift */,
+				0ACC33152880029D00A42BBB /* Credentials.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		0ACC330F287FFCFB00A42BBB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0ACC32F9287FE42400A42BBB /* ContentView.swift */,
+				0ACC3311287FFF1900A42BBB /* LoginView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0ACC3310287FFEEC00A42BBB /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0ACC330D287FFB8F00A42BBB /* Authentication.swift */,
+				0ACC3313287FFF3C00A42BBB /* LoginViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0ACC3317288004E300A42BBB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				0ACC3308287FF83B00A42BBB /* KeychainStorage.swift */,
+				0ACC33182880052500A42BBB /* APIService.swift */,
+				0ACC331A288011C400A42BBB /* UIApplication+Extension.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0ACC32F3287FE42300A42BBB /* KeyChainExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0ACC3302287FE42600A42BBB /* Build configuration list for PBXNativeTarget "KeyChainExample" */;
+			buildPhases = (
+				0ACC32F0287FE42300A42BBB /* Sources */,
+				0ACC32F1287FE42300A42BBB /* Frameworks */,
+				0ACC32F2287FE42300A42BBB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KeyChainExample;
+			packageProductDependencies = (
+				0ACC330B287FF87A00A42BBB /* SwiftKeychainWrapper */,
+			);
+			productName = KeyChainExample;
+			productReference = 0ACC32F4287FE42400A42BBB /* KeyChainExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0ACC32EC287FE42300A42BBB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					0ACC32F3287FE42300A42BBB = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 0ACC32EF287FE42300A42BBB /* Build configuration list for PBXProject "KeyChainExample" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0ACC32EB287FE42300A42BBB;
+			packageReferences = (
+				0ACC330A287FF87A00A42BBB /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
+			);
+			productRefGroup = 0ACC32F5287FE42400A42BBB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0ACC32F3287FE42300A42BBB /* KeyChainExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0ACC32F2287FE42300A42BBB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ACC32FF287FE42600A42BBB /* Preview Assets.xcassets in Resources */,
+				0ACC32FC287FE42600A42BBB /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0ACC32F0287FE42300A42BBB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0ACC3312287FFF1900A42BBB /* LoginView.swift in Sources */,
+				0ACC32FA287FE42400A42BBB /* ContentView.swift in Sources */,
+				0ACC33162880029D00A42BBB /* Credentials.swift in Sources */,
+				0ACC3309287FF83B00A42BBB /* KeychainStorage.swift in Sources */,
+				0ACC3307287FF40500A42BBB /* MixinToken.swift in Sources */,
+				0ACC330E287FFB8F00A42BBB /* Authentication.swift in Sources */,
+				0ACC32F8287FE42400A42BBB /* KeyChainExampleApp.swift in Sources */,
+				0ACC33192880052500A42BBB /* APIService.swift in Sources */,
+				0ACC331B288011C400A42BBB /* UIApplication+Extension.swift in Sources */,
+				0ACC3314287FFF3C00A42BBB /* LoginViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0ACC3300287FE42600A42BBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0ACC3301287FE42600A42BBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0ACC3303287FE42600A42BBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KeyChainExample/Preview Content\"";
+				DEVELOPMENT_TEAM = FU42HFCCML;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mtscloud.matrix.KeyChainExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0ACC3304287FE42600A42BBB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"KeyChainExample/Preview Content\"";
+				DEVELOPMENT_TEAM = FU42HFCCML;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mtscloud.matrix.KeyChainExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0ACC32EF287FE42300A42BBB /* Build configuration list for PBXProject "KeyChainExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0ACC3300287FE42600A42BBB /* Debug */,
+				0ACC3301287FE42600A42BBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0ACC3302287FE42600A42BBB /* Build configuration list for PBXNativeTarget "KeyChainExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0ACC3303287FE42600A42BBB /* Debug */,
+				0ACC3304287FE42600A42BBB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0ACC330A287FF87A00A42BBB /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jrendel/SwiftKeychainWrapper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0ACC330B287FF87A00A42BBB /* SwiftKeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0ACC330A287FF87A00A42BBB /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
+			productName = SwiftKeychainWrapper;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 0ACC32EC287FE42300A42BBB /* Project object */;
+}
