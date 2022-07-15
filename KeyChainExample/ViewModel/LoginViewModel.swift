@@ -11,7 +11,7 @@ class LoginViewModel: ObservableObject {
     @Published var credentials = Credentials()
     @Published var showProgressView = false
     @Published var error: Authentication.AuthenticationError?
-    @Published var storeCredentialsNext = true
+    @Published var storeCredentialsNext = false
     
     
     var loginDisabled: Bool {
@@ -26,8 +26,13 @@ class LoginViewModel: ObservableObject {
             
             switch result {
             case .success:
+//                if storeCredentialsNext {
+//                    if KeychainStorage.saveToken(MixinToken(mx_clientID: "123", mx_sessionID: "456", mx_pinToken: "789", mx_privateKey: "321")){
+//                        storeCredentialsNext = false
+//                    }
+//                }
                 if storeCredentialsNext {
-                    if KeychainStorage.saveToken(MixinToken(mx_clientID: "123", mx_sessionID: "456", mx_pinToken: "789", mx_privateKey: "321")){
+                    if KeychainStorage.saveCredentials(credentials) {
                         storeCredentialsNext = false
                     }
                 }
